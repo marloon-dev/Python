@@ -1,69 +1,74 @@
 print("\n=== Simulador de Ponto de Venda (PDV) ===")
 
-# ENTRADA DE DADOS
 nome = input("\nNome do cliente: ")
-valor_compra = float(input("Valor da compra: "))
+valor_compra = float(input("Valor da compra: R$ "))
 
 # VALIDAÇÃO DA OPÇÃO DE PAGAMENTO
 while True:
-    opcao_pagamento = float(input(
-        "\nSelecione a forma de pagamento"
-        "(1 - À vista, 2 - Parcelado): "))
-    
+    opcao_pagamento = int(input(
+        "\nSelecione a forma de pagamento "
+        "\n(1 - À vista, 2 - Parcelado): "
+    ))
+
     if opcao_pagamento < 1 or opcao_pagamento > 2:
-        print("Opção inválida. Selecione 1 ou 2.")
+        print("Opção inválida. Escolha 1 ou 2.")
     else:
         break
-    
 
-print(f"Você escolheu a forma de pagamento: {opcao_pagamento:0.0f}")
+print(f"Você escolheu a forma de pagamento: {opcao_pagamento}")
 
-#PAGAMENTO À VISTA
+# PAGAMENTO À VISTA
 if opcao_pagamento == 1:
+
     desconto = valor_compra * 0.10
     valor_final = valor_compra - desconto
 
-    print("Opção de pagamento selecionada: À vista")
+    print("\nOpção de pagamento: À vista")
     print("Desconto de 10% aplicado.")
-    print(f"Valor final a ser pago: R$ {valor_final:.2f}")
+    print(f"Valor final: R$ {valor_final:.2f}")
 
-#PAGAMENTO PARCELADO
+# PAGAMENTO PARCELADO
 elif opcao_pagamento == 2:
-    while True:     
-     qtd_parcelas = int(input(
-         "\nEscolha a quantidade de parcelas (1 a 12) vezes: "
-         ))  
-     
-     if qtd_parcelas < 1 or qtd_parcelas > 12:
-        print("\nQuantidade inválida. Escolha entre 1 e 12.")
-     else:
-         break
+
+    # VALIDAR PARCELAS
+    while True:
+
+        qtd_parcelas = int(input(
+            "\nEscolha a quantidade de parcelas (1 a 12): "
+        ))
+
+        if qtd_parcelas < 1 or qtd_parcelas > 12:
+            print("Quantidade inválida. Escolha entre 1 e 12.")
+        else:
+            break
+
     print(f"Você escolheu parcelar em {qtd_parcelas} vezes.")
 
-    # 1 ATÉ 3 PARCELAS - SEM JUROS
+    # 1 A 3 PARCELAS - SEM JUROS
     if qtd_parcelas <= 3:
+
         valor_apagar = valor_compra
 
-        print("Pagamento parcelado sem Juros.")
+        print("Pagamento parcelado sem juros.")
 
-    # 4 ATÉ 6 PARCELAS - JUROS DE 10%
-    elif qtd_parcelas >= 4 and qtd_parcelas <= 6:
-        valor_final = valor_compra * 1.10
-    
-        print("Pagamento parcelado com Juros de 10%.")
+    # 4 A 6 PARCELAS - 10% JUROS
+    elif qtd_parcelas <= 6:
 
-    # 7 ATÉ 12 PARCELAS - JUROS DE 20%
+        valor_apagar = valor_compra * 1.10
+
+        print("Pagamento parcelado com juros de 10%.")
+
+    # 7 A 12 PARCELAS - 20% JUROS
     else:
+
         valor_apagar = valor_compra * 1.20
-        print("Pagamento parcelado com jutos de 20%.")
-    
-    # CÁLCULAR O VALOR DE CADA PARCELA
-    valor_pacela = valor_apagar / qtd_parcelas
 
-    # MOSTRAR O VALOR TOTAL A PAGAR E O VALOR DE CADA PARCELA
-    print(f"Valor total a ser pago: R$ {valor_apagar:.2f}")
-    print(f"Valor de cada parcela: R$ {valor_pacela:.2f}")      
+        print("Pagamento parcelado com juros de 20%.")
 
-#OPÇÃO DE PAGAMENTO INVÁLIDA
-else:
-    print("Opção de pagamento inválida. Por favor, selecione 1 ou 2.")
+    # VALOR DAS PARCELAS
+    valor_parcela = valor_apagar / qtd_parcelas
+
+    print(f"\nValor total a pagar: R$ {valor_apagar:.2f}")
+    print(f"Valor de cada parcela: R$ {valor_parcela:.2f}")
+
+print("\n__________________________________________________________________________________________")

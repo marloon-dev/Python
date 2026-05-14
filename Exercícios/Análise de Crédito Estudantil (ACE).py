@@ -44,3 +44,5 @@ if capacidade_pagamento_mensal >= valor_curso:
     print("\nCrédito aprovado! Você pode financiar o curso.")
 else:
     print("\nCrédito negado. Sua capacidade de pagamento é insuficiente.")
+    
+print("\n__________________________________________________________________________________________")
