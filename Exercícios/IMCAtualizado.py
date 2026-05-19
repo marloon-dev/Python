@@ -15,6 +15,8 @@ for i in range(qtdpessoas):
     
     imc = peso / (altura ** 2)
 
+# CLASSIFICAÇÃO DO IMC
+
     if imc <= 18.5:
         classificacao = "Abaixo do peso"
     elif imc < 18.5 or imc <= 24.9:
@@ -28,6 +30,8 @@ for i in range(qtdpessoas):
     else:
         classificacao = "Obesidade grau 3"
 
+# ARMAZENAR DADOS EM UM DICIONÁRIO
+
     pessoa = {
         "nome": nome,
         "idade": idade,
@@ -36,6 +40,8 @@ for i in range(qtdpessoas):
         "imc": imc,
         "classificacao": classificacao
     }
+
+# MOSTRAR RESULTADOS
 
     pessoas.append(pessoa)
 print("\nPessoas cadastradas:\n")
