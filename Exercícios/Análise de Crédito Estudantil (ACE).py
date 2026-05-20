@@ -1,3 +1,4 @@
+print()
 print("\n=== Simulador de Análise de Crédito Estudantil (ACE) ===")
 
 # ENTRADA DE DADOS

@@ -1,3 +1,4 @@
+print()
 print("\n=== Simulador de Ponto de Venda (PDV) ===")
 
 nome = input("\nNome do cliente: ")
