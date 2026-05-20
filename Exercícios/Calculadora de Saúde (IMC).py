@@ -1,3 +1,4 @@
+print()
 print("\n=== Calculadora de Saúde (IMC) ===")
 
 # ENTRADA DE DADOS

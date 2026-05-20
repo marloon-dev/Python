@@ -1,5 +1,5 @@
 print()
-print("\n=== Calculadora de Saúde (IMC) ===")
+print("\nCALCULADORA DE (IMC)")
 
 # ENTRADA DE DADOS
 
@@ -10,13 +10,13 @@ pessoas = []
 for i in range(qtdpessoas):
     nome = input("\nNome: ")
     idade = int(input("Idade: "))
-    altura = float(input("Altura (em metros): "))
-    peso = float(input("Peso (em kg): "))
-    
+    altura = float(input("Altura: "))
+    peso = float(input("Peso: "))
+
     imc = peso / (altura ** 2)
 
 # CLASSIFICAÇÃO DO IMC
-
+    
     if imc <= 18.5:
         classificacao = "Abaixo do peso"
     elif imc < 18.5 or imc <= 24.9:
@@ -44,12 +44,15 @@ for i in range(qtdpessoas):
 # MOSTRAR RESULTADOS
 
     pessoas.append(pessoa)
-print("\nPessoas cadastradas:\n")
+print("\nPessoas Cadastradas:")
+
 for pessoa in pessoas:
-    print("Nome:", pessoa["nome"])
+    print("Nome:", pessoa ["nome"])
     print("Idade:", pessoa["idade"])
+    print("Altura:", pessoa["altura"])
     print("IMC:", pessoa["imc"])
     print("Classificação:", pessoa["classificacao"])
-    print() 
 
-print("\n__________________________________________________________________________________________")
+    print()
+
+print("\n___________________________________________________________________")
