@@ -1,24 +1,31 @@
-qtdpessoas = input(int("Digite a quantidade de pessoas: "))
+qtdpessoas = int(input("Digite a quantidade de pessoas: "))
 
 pessoas = []
 
 for i in range(qtdpessoas):
-    nome = input("\nNome: ")
+    listanomes = input("\nNome: ")
 
-pessoa = {
-    "nome": nome
-}
+    pessoa = {
+        "listanomes": listanomes
+    }
 
+    pessoas.append(pessoa)
 
-minhalista3 = ["João", "Maria", "Anna", "Silva"]
+print("\nLista de Nomes:")
 
-print("Lista original:")
-print(minhalista3)
+for pessoa in pessoas:
+    print("Nomes:", pessoa["listanomes"])
 
+# REMOVER NOME
 remover = input("\nDigite o nome para remover: ")
 
-while remover in minhalista3:
-    minhalista3.remove(remover)
+for pessoa in pessoas[:]:
+    if pessoa["listanomes"] == remover:
+        pessoas.remove(pessoa)
 
 print("\nLista Atualizada:")
-print(minhalista3)
+
+for pessoa in pessoas:
+    print("Nomes:", pessoa["listanomes"])
+
+print()
