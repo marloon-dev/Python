@@ -1,0 +1,6 @@
+Este é meu segundo exemplo de arquivo texto e Python.
+
+Python é uma linguagem fantástica!
+
+É uma linguagem muito simples de programar.
+

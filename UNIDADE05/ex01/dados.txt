@@ -1,2 +1,4 @@
 
 Escrevendo no arquivo text 
+
+======Texto Exemplo======
