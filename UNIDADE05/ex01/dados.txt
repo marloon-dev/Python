@@ -2,3 +2,4 @@
 Escrevendo no arquivo text 
 
 ======Texto Exemplo======
+ Python s2 
