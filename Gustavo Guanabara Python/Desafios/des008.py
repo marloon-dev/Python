@@ -1,6 +1,6 @@
 m = int(input("\nDigite a medida em metros: "))
-c = m * 10
-mm = m * 100
+c = m * 100
+mm = m * 1000
 
 print("\nMetros: {} m." .format(m),
       "\nCentrimetros: {} cm." . format(c),
