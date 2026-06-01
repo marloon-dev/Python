@@ -1,6 +1,6 @@
-import math
+from math import sqrt, floor
 
 num = int(input("\nDigite um número: "))
-raiz = math.sqrt(num)
+raiz = sqrt(num)
 
-print("Raiz Quadrada: {:.0f}".format(raiz))
+print("Raiz Quadrada: {:.0f}".format(floor(raiz)))
