@@ -1,12 +1,12 @@
 salario = float(input("Salário Atual: € "))
 aumento = float(input("Aumento em porcentagem: "))
 
-aumento_porc = aumento / 100
-salario_novo = salario * aumento_porc
+aumento_porc = salario + (salario * aumento / 100)
+
 
 print(
     "\nSalário Atual: € {:.2f}".format(salario),
     "\nPocentagem do aumento: {:.0f}%".format(aumento),
-    "\nValor do aumento: € {:.0f}".format(salario_novo),
-    "\nNovo salário: € {:.2f}".format(salario_novo + salario)
+    "\nValor do aumento: € {:.0f}".format(salario * aumento / 100),
+    "\nNovo salário: € {:.2f}".format(aumento_porc)
 )
