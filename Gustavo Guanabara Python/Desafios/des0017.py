@@ -1,9 +1,11 @@
+print("\n====CALCULADORA DE HIPOTENUSA====")
 # IMPORTANDO O MODULO HYPOT DA BIBLIOTECA MATH
 from math import hypot
 
 # PREENCHIMENTO DOS CATETOS
-co = float(input("Comprimento do cateto aposto: "))
-ca = float(input("Comprimento do cateto adjacente: "))
+print("\nDIGITE OS CATETOS")
+co = float(input("\nCateto aposto: "))
+ca = float(input("Cateto adjacente: "))
 
 # CALCULO DA HIPOTENUSA
 hi = hypot(co, ca)
@@ -12,4 +14,7 @@ hi = hypot(co, ca)
 # hi = (co ** 2 + ca ** 2) ** (1/2)
 
 # IMPRIMIR RESULTADO
-print("A hipotenusa: {:.2f}".format(hi))
+print("\nRESULTADO")
+print("\nHipotenusa: {:.2f}".format(hi))
+
+print("\n####################100% PROGRAMA FINALIZADO")
