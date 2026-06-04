@@ -1,4 +1,4 @@
-print("\n====CALCULADORA DE SENO, COSSENO E TANGENTE====")
+
 
 # IMPORTE DA BIBLIETECA MATH
 from math import radians, sin, cos, tan
