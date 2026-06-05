@@ -16,8 +16,10 @@ for i in range(quantidade):
 sorteio = choice(nomes)
 
 # IMPRIMIR NOMES A SEREM SORTEIADO NA TELA
-print("\nNOMES CONCORRENTES:")
-print("\nLISTA DE NOMES: {}".format(nomes))
+print("\nLISTA DE NOMES:")
+print("")
+for nome in nomes:
+    print(nome)
 
 # IMPRIMIR NOMES SORTEADO NA TELA
 print("\nNOME SORTEADO: {}".format(nome))
