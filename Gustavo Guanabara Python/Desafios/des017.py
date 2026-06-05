@@ -1,4 +1,5 @@
 print("\n====CALCULADORA DE HIPOTENUSA====")
+
 # IMPORTANDO O MODULO HYPOT DA BIBLIOTECA MATH
 from math import hypot
 

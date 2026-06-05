@@ -1,4 +1,25 @@
-# IMPORTAR BIBLIOTECA RANDOM
-import random
+print("\n====SORTEIO DE NOMES ALEATÓRIOS====")
 
-lista_nomes = []
+# IMPORTAR BIBLIOTECA RANDOM
+from random import choice
+
+# ENTRADA DOS NOMES PARA O SORTEIO
+nomes = []
+
+quantidade = int(input("\nQUANTOS NOMES PARA O SORTEIO: "))
+
+for i in range(quantidade):
+    nome = input(f"NOMES {i + 1}: ")
+    nomes.append(nome)
+
+# SORTEIO 
+sorteio = choice(nomes)
+
+# IMPRIMIR NOMES A SEREM SORTEIADO NA TELA
+print("\nNOMES CONCORRENTES:")
+print("\nLISTA DE NOMES: {}".format(nomes))
+
+# IMPRIMIR NOMES SORTEADO NA TELA
+print("\nNOME SORTEADO: {}".format(nome))
+
+print("\n####################100% PROGRAMA FINALIZADO")
