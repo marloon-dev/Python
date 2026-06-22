@@ -1,14 +1,9 @@
-print("\n==== EXERCÍCIO 33 ====")
+print("\n==== EXERCÍCIO 35 ====")
 
-print("\nDIGITE SEU ORDENADO")
-ordenado = float(input("VALOR: "))
+reta_1 = float(input("RETA 01: "))
+reta_2 = float(input("RETA 02: "))
+reta_3 = float(input("RETA 03: "))
 
-if ordenado <= 1.250:
-    aumento = ordenado + (ordenado * 15 / 100)
-else:
-   aumento = ordenado + (ordenado * 10 / 100)
 
-print("\nRESULTADO")
-print("\nAUMENTO: € {:.3f},00".format(aumento))
 
 print("\n####################....100% PROGRAMA FINALIZADO....")
