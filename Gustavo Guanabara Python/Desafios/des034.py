@@ -1,4 +1,4 @@
-print("\n==== EXERCÍCIO 33 ====")
+print("\n==== EXERCÍCIO 34 ====")
 
 print("\nDIGITE SEU ORDENADO")
 ordenado = float(input("VALOR: "))
