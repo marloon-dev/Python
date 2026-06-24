@@ -31,13 +31,16 @@ def fim():
 
 inicio()
 
+# OPÇÕES PARA SER ESCOLHIDAS NO PROGRAMA
+
 print(f"{ciano}=-" * 21 + reset)
 print(f"{reset}|   PREENCHA COM NÚMERO PARA CONVERTER   |")
 print(f"{reset}|      [1] = CONVERTER PARA BINÁRIO      |")
 print(f"{reset}|      [2] = CONVERTER PARA OCTAL        |")
 print(f"{reset}|      [3] = CONVERTER PARA HEXADECIMAL  |")
-
 print(f"{ciano}=-" * 21 + reset)
+
+# ESCOLHER UMA OPÇÃO PARA SER CONVERTIDA O NÚMERAL
 
 while True:
     opcao = int(input("\n{}OPÇÃO: ".format(ciano)))
@@ -45,8 +48,12 @@ while True:
     if opcao in (1, 2, 3):
           break
     print("{}OPÇÃO INVÁLIDA! DIGITE 1: 2 OU 3.".format(vermelho))
+
+# ESCOLHER UM NÚMERO
       
 numero = int(input("{}NÚMERO: ".format(ciano)))
+
+# CONDIÇÕES PARA CONVERTE O NUMERAL EM UM RESULTADO
 
 if opcao == 1:
     resultado = bin(numero)[2:]
@@ -59,6 +66,8 @@ elif opcao == 2:
 elif opcao == 3:
     resultado = hex(numero)[2:].upper()
     converte = "HEXADECIMAL"
+
+# MOSTRAR NA TELA RESULTADOS
 
 print("\n{}NÚMERAL: {}".format(verde, converte))       
 print("{}RESULTADO: {}".format(verde, resultado))
