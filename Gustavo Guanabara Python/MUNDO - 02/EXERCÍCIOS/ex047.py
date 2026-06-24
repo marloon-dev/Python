@@ -23,7 +23,7 @@ def fim():
     print(f"{ciano}=-" * 21 + reset)
     print(f"{azul}|            PROGRAMA ENCERRADO          |{reset}")
     print("|                                        |")
-    print(f"{verde}|        Obrigado por praticar! 🐍        |{reset}")
+    print(f"{verde}|        Obrigado por praticar! 🐍       |{reset}")
     print("|                                        |")
     print(f"{verde}|          Bons estudos em Python        |{reset}")
     print(f"{ciano}=-" * 21 + reset)
