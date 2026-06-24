@@ -31,9 +31,9 @@ def fim():
 
 inicio()
 
-num1 = int(input("1º NÚMERO: "))
-num2 = int(input("2º NÚMERO: "))
-num3 = int(input("3º NÚMERO: "))
+num1 = int(input("\n{}1º NÚMERO: ".format(verde)))
+num2 = int(input("{}2º NÚMERO: ".format(verde)))
+num3 = int(input("{}3º NÚMERO: ".format(verde)))
 
 maior = num1
 if num2 < num1 and num2 < num3:
@@ -42,21 +42,21 @@ if num3 > num1 and num3 > num1:
     maior = num3
 
 if num1 == num2:
-    iguais = "1º E 2ª, POSIÇÃO."
+    iguais = "{}1º E 2ª, POSIÇÃO.".format(ciano)
 elif num1 == num3:
-    iguais = "1º E 3ª, POSIÇÃO."
+    iguais = "{}1º E 3ª, POSIÇÃO.".format(ciano)
 elif num2 == num1:
-    iguais = "2º E 1ª, POSIÇÃO."
+    iguais = "{}2º E 1ª, POSIÇÃO.".format(ciano)
 elif num2 == num3:
-    iguais = "2º E 3ª, POSIÇÃO."
+    iguais = "{}2º E 3ª, POSIÇÃO.".format(ciano)
 elif num3 == num1:
-    iguais = "3º E 1ª, POSIÇÃO."
+    iguais = "{}3º E 1ª, POSIÇÃO.".format(ciano)
 elif num3 == num2:
-    iguais = "3º E 2ª, POSIÇÃO."
+    iguais = "{}3º E 2ª, POSIÇÃO.".format(ciano)
 else:
-    iguais = "NENHUM NUMERO IGUAL"
+    iguais = "{}NENHUM NÚMERO IGUAL".format(vermelho)
 
-print("NÚMERO MAIOR: {}".format(maior))
+print("\n{}NÚMERO MAIOR: {}".format(ciano, maior))
 print("NÚMERO IGUAIS: {}".format(iguais))
 
 fim()
