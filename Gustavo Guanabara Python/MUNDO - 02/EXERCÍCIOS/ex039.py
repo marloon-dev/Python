@@ -31,6 +31,45 @@ def fim():
 
 inicio()
 
+# IMPORTANDO O MÓDULO DATE DA BIBLIOTECA DATETIME 
 
+from datetime import date
+
+# PREENCHER ANO DE NASCIMENTO
+
+ano = int(input("{}ANO NASCIMENTO:{} ".format(ciano, reset)))
+
+# USANDO O MÓDULO DATE, PARA PREENCHER O ANO ATUAL
+
+ano_atual = date.today().year
+
+# SUBTRAÇÃO PARA EXTRAIR A IDADE DO USUÁRIO
+
+idade = ano_atual - ano
+
+# SOMA PARA SABER QUAL O ANO PRECISAR FAZER O ALISTAMENTO
+
+alistamento = ano + 18
+
+# CONDIÇÕES PARA CADA SENÁRIO
+
+if idade == 18:
+    resultado = "{}SIM".format(verde)
+    prazo = "{}EM DIAS".format(verde)
+
+elif idade < 18:
+    resultado = "{}NÃO".format(vermelho)
+    prazo = "{}EM DIAS".format(verde)
+
+elif idade > 18:
+    resultado = "{}SIM".format(verde)
+    prazo = "{}DÉBITO".format(vermelho)
+
+# MOSTRAR RESULTADOS
+
+print("{}PRECISA SE ALISTA: {}{}".format(ciano,reset, resultado))
+print("{}IDADE: {}{:.0f}".format(ciano, reset, idade))
+print("{}ANO DE ALISTAMENTO: {}{}".format(ciano, reset, alistamento))
+print("{}SERVIÇO MILITAR: {}".format(ciano, prazo))
 
 fim()
