@@ -8,5 +8,5 @@ caculo_2 = 19%2
 print(calculo)
 print(caculo_2)
 
-x = 'curso de python no cursoemvideo'
+x = "curso de python no cursoemvideo"
 print(x[:5])
