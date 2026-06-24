@@ -10,7 +10,7 @@ def inicio():
     print(f"{ciano}=-" * 21 + reset)
     print(f"{azul}|          INICIANDO O PROGRAMA          |{reset}")
     print("|                                        |")
-    print(f"{verde}|            EXERCÍCIO - 36🚀            |{reset}")
+    print(f"{verde}|            EXERCÍCIO - 36 🐍           |{reset}")
     print("|                                        |")
     print(f"{verde}|          Bons estudos em Python        |{reset}")
     print(f"{ciano}=-" * 21 + reset)
@@ -20,7 +20,7 @@ def fim():
     print(f"{ciano}=-" * 21 + reset)
     print(f"{azul}|            PROGRAMA ENCERRADO          |{reset}")
     print("|                                        |")
-    print(f"{verde}|        Obrigado por praticar! 🚀       |{reset}")
+    print(f"{verde}|        Obrigado por praticar! 🐍        |{reset}")
     print("|                                        |")
     print(f"{verde}|          Bons estudos em Python        |{reset}")
     print(f"{ciano}=-" * 21 + reset)
@@ -29,7 +29,7 @@ def fim():
 inicio()
 
 print(f"{ciano}=-" * 21 + reset)
-print(f"{reset}|   PREENCHA COM NUMERO PARA CONVERTER   |")
+print(f"{reset}|   PREENCHA COM NÚMERO PARA CONVERTER   |")
 print(f"{reset}|      [1] = CONVERTER PARA BINÁRIO      |")
 print(f"{reset}|      [2] = CONVERTER PARA OCTAL        |")
 print(f"{reset}|      [3] = CONVERTER PARA HEXADECIMAL  |")
@@ -46,15 +46,18 @@ while True:
 numero = int(input("{}NÚMERO: ".format(ciano)))
 
 if opcao == 1:
-        resultado = bin(numero)[2:]
+    resultado = bin(numero)[2:]
+    converte = "BINÁRIO"
 
 elif opcao == 2:
     resultado = oct(numero)[2:]
+    converte = "OCTAL"
 
 elif opcao == 3:
-        resultado = hex(numero)[2:].upper()
-       
+    resultado = hex(numero)[2:].upper()
+    converte = "HEXADECIMAL"
 
+print("\n{}NÚMERAL: {}".format(verde, converte))       
 print("{}RESULTADO: {}".format(verde, resultado))
 
 print("")
