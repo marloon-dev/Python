@@ -58,8 +58,8 @@ else:
 
 # MOSTRAR NA TELA O RESULTADO
 
-print("{}QUANTIDADE DE PARCELAS: {:.0f}".format(azul, parcelas * 12))
-print("{}VALOR DA PARCELA: {:.3f}".format(azul, prestacao))
-print("{}FINANCIAMENTO: {}".format(azul, resultado))
+print("{}QUANTIDADE DE PARCELAS: {:.0f} MESES".format(azul, parcelas * 12))
+print("{}VALOR DA PARCELA: €{:.3f}".format(azul, prestacao))
+print("{}FINANCIAMENTO: {} ".format(azul, resultado))
 
 fim() 
