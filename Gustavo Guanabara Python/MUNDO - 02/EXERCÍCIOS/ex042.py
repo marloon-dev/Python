@@ -45,13 +45,13 @@ else:
 if converte == "{}Não".format(vermelho):
     resultado = "{}Tipo inválido".format(vermelho)
 
-elif r_1 == r_2 and r_1 == r_3:
+elif r_1 == r_2 == r_3:
     resultado = "Equilátero"
 
 elif r_1 == r_2 or r_1 == r_3 or r_2 == r_3:
     resultado = "Isóceles"
 
-elif r_1 != r_2 or r_1 != r_3 or r_2 != r_3:
+elif r_1 != r_2 != r_3 != r_1:
     resultado = "Escaleno"
 
 print("\n{}Pode ser formar um triângulo: {}{}".format(ciano, reset, converte))
