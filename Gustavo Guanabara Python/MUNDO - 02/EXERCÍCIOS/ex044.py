@@ -31,15 +31,15 @@ def fim():
 
 inicio()
 
-valor = float(input("\bVALOR DO PRODUTO: €"))
+valor = float(input("\bVALOR DO PRODUTO: € "))
 print("\nFORMAS DE PAGAMENTO")
-print("[ 1 ] à vista dinheiro/cheque")
+print("\n[ 1 ] à vista dinheiro/cheque")
 print("[ 2 ] à vista cartão")
 print("[ 3 ] 2x cartão")
 print("[ 4 ] 3x ou mais cartão")
 opcao = int(input("QUAL É A OPÇÃO: "))
 if opcao == 4:
-    parcelas = str(input("QUANTIDADE DE PARCELAS: "))
+    parcelas = int(input("QUANTIDADE DE PARCELAS: "))
 
 desc1 = valor * 0.10
 desc2 = valor * 0.05
@@ -53,10 +53,14 @@ elif opcao == 3:
 elif opcao == 4:
     resultado = valor + acres
 
-valor_parcelas = parcelas / resultado
+if opcao == 3:
+    resultado / 3
 
-print("VALOR DA COMPRA: {}".format(resultado))
-print("PARCELAS: {}x de € {}".format(parcelas(parcelas,valor_parcelas )))
+valor_parcelas = resultado / parcelas
 
+print("\nVALOR DA COMPRA: {:.3f}".format(resultado))
+
+if opcao == 3 or opcao == 4:
+    print("PARCELAS: {}x de € {:.2f}".format(parcelas, valor_parcelas))
 
 fim()
