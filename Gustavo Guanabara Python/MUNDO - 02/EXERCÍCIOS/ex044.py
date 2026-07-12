@@ -53,14 +53,16 @@ elif opcao == 3:
 elif opcao == 4:
     resultado = valor + acres
 
+resultado = resultado * 1000
+
+print("\nVALOR DA COMPRA: {:.2f}".format(resultado))
+
 if opcao == 3:
-    resultado / 3
+    cartao = resultado / 2
+    print("PARCELAS: 2x de € {:.2f}".format(cartao))
 
-valor_parcelas = resultado / parcelas
-
-print("\nVALOR DA COMPRA: {:.3f}".format(resultado))
-
-if opcao == 3 or opcao == 4:
+if opcao == 4:
+    valor_parcelas = resultado / parcelas
     print("PARCELAS: {}x de € {:.2f}".format(parcelas, valor_parcelas))
 
 fim()
