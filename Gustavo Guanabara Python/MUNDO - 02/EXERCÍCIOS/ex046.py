@@ -31,9 +31,12 @@ def fim():
 
 inicio()
 
-incial = int(input("Número Inicial: "))
-final = int(input("Número Final: "))
+from time import sleep
 
+regressiva = int(input("Número: "))
 
-
+for contagem in range(regressiva, -1, -1):
+    print(contagem)
+    sleep(1)
+print("\n💥💥💥💥💥💥💥💥💥")
 fim()
