@@ -39,4 +39,5 @@ for contagem in range(regressiva, -1, -1):
     print(contagem)
     sleep(1)
 print("\n💥💥💥💥💥💥💥💥💥")
+
 fim()
