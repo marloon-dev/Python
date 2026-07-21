@@ -9,10 +9,11 @@ reset = "\033[m"
 # PREDEFINIÇÕES PARA O CABEÇALHO
 
 def inicio():
+    print("\n ")
     print(f"{ciano}=-" * 21 + reset)
     print(f"{azul}|          INICIANDO O PROGRAMA          |{reset}")
     print("|                                        |")
-    print(f"{verde}|            EXERCÍCIO - 36 🐍           |{reset}")
+    print(f"{verde}|            EXERCÍCIO - 47 🐍           |{reset}")
     print("|                                        |")
     print(f"{verde}|          Bons estudos em Python        |{reset}")
     print(f"{ciano}=-" * 21 + reset)
@@ -20,6 +21,7 @@ def inicio():
 # PREDEFINIÇÕES PARA O RODA PÉ
 
 def fim():
+    print("\n ")
     print(f"{ciano}=-" * 21 + reset)
     print(f"{azul}|            PROGRAMA ENCERRADO          |{reset}")
     print("|                                        |")
@@ -31,6 +33,9 @@ def fim():
 
 inicio()
 
+numero = int(input("\nNúmero: "))
 
+for n in range(1, (numero + 1), 2):
+    print(n, end=" ")
 
 fim()
