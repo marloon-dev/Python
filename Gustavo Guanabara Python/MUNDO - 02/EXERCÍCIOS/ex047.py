@@ -35,7 +35,7 @@ inicio()
 
 numero = int(input("\nNúmero: "))
 
-for n in range(1, (numero + 1), 2):
+for n in range(1, (numero + 1)):
     print(n, end=" ")
 
 fim()
