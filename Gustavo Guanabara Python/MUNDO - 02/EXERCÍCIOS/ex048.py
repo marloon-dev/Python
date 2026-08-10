@@ -12,7 +12,7 @@ def inicio():
     print(f"{ciano}=-" * 21 + reset)
     print(f"{azul}|          INICIANDO O PROGRAMA          |{reset}")
     print("|                                        |")
-    print(f"{verde}|            EXERCÍCIO - 36 🐍           |{reset}")
+    print(f"{verde}|            EXERCÍCIO - 48 🐍           |{reset}")
     print("|                                        |")
     print(f"{verde}|          Bons estudos em Python        |{reset}")
     print(f"{ciano}=-" * 21 + reset)
@@ -31,6 +31,18 @@ def fim():
 
 inicio()
 
+numero = int(input("Número: "))
 
+soma = 0
+contador = 0
 
+for c in range (1, (numero + 1), 2):
+    if c % 3 == 0:
+        contador = contador + 1
+        soma = soma + c
+        print (c, end=" ")
+print(" ")        
+print("\nQuantos valores: {}".format(contador))        
+print("\nSoma dos valores: {}".format(soma))       
+print(" ")
 fim()
