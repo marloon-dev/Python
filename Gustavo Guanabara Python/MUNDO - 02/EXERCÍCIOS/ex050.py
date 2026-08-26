@@ -12,7 +12,7 @@ def inicio():
     print(f"{ciano}=-" * 21 + reset)
     print(f"{azul}|          INICIANDO O PROGRAMA          |{reset}")
     print("|                                        |")
-    print(f"{verde}|            EXERCÍCIO - 36 🐍           |{reset}")
+    print(f"{verde}|            EXERCÍCIO - 50 🐍           |{reset}")
     print("|                                        |")
     print(f"{verde}|          Bons estudos em Python        |{reset}")
     print(f"{ciano}=-" * 21 + reset)
@@ -31,6 +31,7 @@ def fim():
 
 inicio()
 
-
+for c in range(1, 7):
+    num = int(input("DIGITE UM VALOR: "))
 
 fim()
