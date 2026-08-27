@@ -34,7 +34,7 @@ inicio()
 num = int(input("Primeiro Termo: "))
 raz = int(input("Razão: "))
 
-for c in range (num, num + (10-1) * raz, raz):
+for c in range (num, num + (11-1) * raz, raz):
     print("{}".format(c), end= " -> ")
 print("acabou")
 
