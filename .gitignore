@@ -1,2 +1,5 @@
 .DS_Store
-.DS_Store
+.DS_StoreThumbs.db
+node_modules/
+*.swp
+__pycache__/ *.pyc .venv/
