@@ -1,5 +1,11 @@
+# Sistema
 .DS_Store
-.DS_StoreThumbs.db
-node_modules/
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editor
 *.swp
-__pycache__/ *.pyc .venv/
