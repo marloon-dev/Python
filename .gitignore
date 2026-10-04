@@ -9,3 +9,6 @@ __pycache__/
 
 # Editor
 *.swp
+
+# Mídia (não versionar arquivos de áudio)
+*.mp3
