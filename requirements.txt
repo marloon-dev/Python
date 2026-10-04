@@ -1,0 +1,4 @@
+# Dependências opcionais — só alguns scripts precisam delas.
+# A maioria dos exercícios usa apenas a biblioteca padrão do Python.
+emoji>=2.0        # MUNDO - 01/Aulas/aula008b.py
+python-vlc>=3.0   # MUNDO - 01/Desafios/des021 (requer o VLC instalado no sistema)
